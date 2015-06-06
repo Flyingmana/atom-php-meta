@@ -1,0 +1,21 @@
+{
+  "name": "phpstorm-meta",
+  "main": "./lib/phpstorm-meta",
+  "version": "0.0.0",
+  "description": "PhpStorm Advanced Metadata support for Atom",
+  "keywords": [
+    "phpstorm",
+    "php",
+    "autocomplet"
+  ],
+  "activationCommands": {
+    "atom-workspace": "phpstorm-meta:toggle"
+  },
+  "repository": "https://github.com/Flyingmana/atom-phpstom-meta",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

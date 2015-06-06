@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle phpstorm-meta'
+      'command': 'phpstorm-meta:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'phpstorm-meta'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'phpstorm-meta:toggle'
+        }
+      ]
+    ]
+  }
+]
