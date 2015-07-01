@@ -5,7 +5,7 @@ PhpstormMeta = require '../lib/phpstorm-meta'
 # To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 # or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe "PhpstormMeta", ->
+xdescribe "PhpstormMeta", ->
   [workspaceElement, activationPromise] = []
 
   beforeEach ->

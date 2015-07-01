@@ -1,5 +1,5 @@
 PhpstormMetaView = require '../lib/phpstorm-meta-view'
 
-describe "PhpstormMetaView", ->
+xdescribe "PhpstormMetaView", ->
   it "has one valid test", ->
     expect("life").toBe "easy"
