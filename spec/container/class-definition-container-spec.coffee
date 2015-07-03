@@ -26,3 +26,19 @@ describe "PHP Class Container", ->
       container.addNamespace('\\Sandbox\\Sooo\\Empty')
       console.log(container.searchForNamespaces("Illum"))
       expect(container.searchForNamespaces("Illum").length).toEqual(3)
+
+  describe "when a class is added", ->
+    it "is found via search", ->
+      expect(container.searchForClass("Illum").length).toEqual(0)
+      container.addNamespace('\\Illuminate\\Foundation\\Application')
+      expect(container.searchForClass("Illum").length).toEqual(1)
+
+
+    it "is found via search", ->
+      expect(container.searchForClass("Illum").length).toEqual(0)
+      container.addNamespace('\\Illuminate\\Foundation\\Application')
+      container.addNamespace('\\Illuminate\\Contracts\\Foundation\\Application')
+      container.addNamespace('\\Illuminate\\Contracts\\Container\\Container')
+      container.addNamespace('\\Sandbox\\Sooo\\Empty')
+      console.log(container.searchForClass("Illum"))
+      expect(container.searchForClass("Illum").length).toEqual(3)
