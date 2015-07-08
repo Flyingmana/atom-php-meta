@@ -23,7 +23,7 @@ describe "PHP FactoryAnalyzer", ->
     expect(grammar.scopeName).toBe 'text.html.php'
 
   it 'analyzes the file', ->
-    file = new File('/home/flyingmana/github/phpstorm-meta/local/.phpstorm.meta.php', false);
+    file = new File(__dirname+'/.phpstorm.meta.php', false);
     phpMetaTokens = grammar.tokenizeLines(file.readSync());
 
     for line in phpMetaTokens
