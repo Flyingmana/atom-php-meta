@@ -146,7 +146,9 @@ module.exports =
       return methodsStatic[className] || []
 
     getFactoryArgumentsForMethod: ({className, methodName}) ->
-      return factoryMethods[className][methodName] || []
+      if !factoryMethods[className] || !factoryMethods[className][methodName]
+        return []
+      return factoryMethods[className][methodName]
 
     escapeRegex: (string) ->
       return string.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')
