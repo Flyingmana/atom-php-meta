@@ -2,8 +2,8 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle php-meta'
-      'command': 'php-meta:toggle'
+      'label': 'PHP Goto'
+      'command': 'php-meta:goto'
     }
   ]
 'menu': [
@@ -13,8 +13,8 @@
       'label': 'php-meta'
       'submenu': [
         {
-          'label': 'Toggle'
-          'command': 'php-meta:toggle'
+          'label': 'PHP Goto'
+          'command': 'php-meta:goto'
         }
       ]
     ]

@@ -17,7 +17,7 @@ module.exports = PhpMeta =
 
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'php-meta:toggle': => @toggle()
-    @subscriptions.add atom.commands.add 'atom-workspace', 'php-meta:goto': => @goto()
+    @subscriptions.add atom.commands.add 'atom-text-editor', 'php-meta:goto': => @goto()
 
   deactivate: ->
     @subscriptions.dispose()
