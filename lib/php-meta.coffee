@@ -1,3 +1,4 @@
+path = require 'path'
 {CompositeDisposable} = require 'atom'
 AutocompleteProviderClass = require "./providers/autocomplete"
 
@@ -16,6 +17,7 @@ module.exports = PhpMeta =
 
     # Register command that toggles this view
     @subscriptions.add atom.commands.add 'atom-workspace', 'php-meta:toggle': => @toggle()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'php-meta:goto': => @goto()
 
   deactivate: ->
     @subscriptions.dispose()
@@ -28,3 +30,12 @@ module.exports = PhpMeta =
 
   toggle: ->
     console.log 'PhpMeta was toggled!'
+
+  goto: ->
+    console.log 'php-meta:goto was toggled!'
+    editor = atom.workspace.getActiveTextEditor()
+    line = 22
+    atom.workspace.open(path.join(__dirname, 'php-meta.coffee')).done =>
+      editor.scrollToBufferPosition([line,0], center: true)
+      editor.setCursorBufferPosition([line,0])
+      editor.moveToFirstCharacterOfLine()
