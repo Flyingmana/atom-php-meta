@@ -1,4 +1,6 @@
-# phpstorm-meta package
+# Atom-php-meta package
+does not target to replace other php packages for atom, but hopes
+to provide some reusable stuff for them.
 
 caution: current state experimental and incomplete
 

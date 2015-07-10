@@ -1,14 +1,14 @@
 {
-  "name": "phpstorm-meta",
-  "main": "./lib/phpstorm-meta",
+  "name": "php-meta",
+  "main": "./lib/php-meta",
   "version": "0.0.0",
-  "description": "PhpStorm Advanced Metadata support for Atom",
+  "description": "PHP Advanced Meta support for Atom",
   "keywords": [
     "phpstorm",
     "php",
     "autocomplet"
   ],
-  "repository": "https://github.com/Flyingmana/atom-phpstom-meta",
+  "repository": "https://github.com/Flyingmana/atom-php-meta",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

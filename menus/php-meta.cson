@@ -2,19 +2,19 @@
 'context-menu':
   'atom-text-editor': [
     {
-      'label': 'Toggle phpstorm-meta'
-      'command': 'phpstorm-meta:toggle'
+      'label': 'Toggle php-meta'
+      'command': 'php-meta:toggle'
     }
   ]
 'menu': [
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'phpstorm-meta'
+      'label': 'php-meta'
       'submenu': [
         {
           'label': 'Toggle'
-          'command': 'phpstorm-meta:toggle'
+          'command': 'php-meta:toggle'
         }
       ]
     ]
