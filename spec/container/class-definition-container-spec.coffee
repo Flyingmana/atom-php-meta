@@ -1,6 +1,7 @@
 ###*
  * @type {PhpClassDefinitionContainer}
 ###
+"use strict";
 ContainerClass = require '../../lib/container/class-definition-container'
 
 describe "PHP Class Container", ->
@@ -8,7 +9,6 @@ describe "PHP Class Container", ->
 
   beforeEach ->
     container = new ContainerClass()
-    container.resetContainer()
 
   describe "when a namespace is added", ->
     it "is found via search", ->
